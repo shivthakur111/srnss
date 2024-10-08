@@ -1,0 +1,101 @@
+/* General Footer Styles */
+.footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 25px;
+    padding-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Footer Sections */
+  .footer-section {
+    flex-basis: 30%;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section h4 {
+    color: #f1c40f;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  /* School Logo and Description */
+  .logo-desc p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #dcdcdc;
+  }
+  
+  .footer-logo {
+    max-width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  /* Quick Links */
+  .quick-links ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .quick-links ul li {
+    margin-bottom: 12px;
+  }
+  
+  .quick-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .quick-links ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Social Media Section */
+  .social-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icons a {
+    font-size: 20px;
+    color: #ffffff;
+    padding: 10px;
+    background-color: #34495e;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    background-color: #f1c40f;
+    color: #2c3e50;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #34495e;
+  }
+  
+  .footer-bottom p {
+    font-size: 14px;
+    color: #dddddd;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .footer-section {
+      flex-basis: 100%;
+      text-align: center;
+    }
+  }
+  

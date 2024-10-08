@@ -25,9 +25,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "D:/New Projects/SRNSS/node_modules/bootstrap/dist/css/bootstrap.rtl.min.css"
             ],
-            "scripts": []
+            "scripts": ["D:/New Projects/SRNSS/node_modules/bootstrap/dist/js/bootstrap.min.js"]
           },
           "configurations": {
             "production": {
@@ -94,5 +95,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "6282d8b4-3c57-470a-9aec-c8083a9aac3b"
   }
 }

@@ -1,0 +1,115 @@
+<section class="sec-discription">
+    <div class="content">
+        <h2><i><b style="font-size: larger;">"Welcome to Shree Rajeshwar Nidhi Secondary School.
+
+        </b>We are dedicated to nurturing educational excellence, creativity, and moral values, empowering students to excel in knowledge, discipline, and leadership skills. Education here is the path to a bright future. Together, we cultivate a supportive environment that inspires students to reach their full potential."</i></h2>
+    
+      <div style="text-align: center;">
+        <button class="lportal-btn">Our Learning Portal</button>
+      </div>
+    </div>
+    <div class="image-container">
+      <img src="https://scontent.fktm18-1.fna.fbcdn.net/v/t39.30808-6/343544845_1255960111709449_2894876979855015781_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeGIp0PLoMqjLcr0oQMfzF2ipQErZBfbw8ilAStkF9vDyAtn1RuQzmC1krD3xx1LegL2BF1tnZ13KjCBwolnpsJR&_nc_ohc=IeTdI8us5_4Q7kNvgHT-W7N&_nc_ht=scontent.fktm18-1.fna&_nc_gid=A7khKjEoZuQSPbaf4qfMxlO&oh=00_AYAL5buEUPdTfzGACj9IthjaVlCfWt582pirYXBtaq3hIA&oe=670484CC" alt="scool pic">
+    </div>
+  </section>
+
+  <!-- latest notice -->
+  <section class="latest-notice">
+   
+      <div class="notice-card">
+        <h4 class="notice" style="background-color: rgb(211, 21, 21);">Latest Notice</h4>
+        <p class="notice"><a href="">कक्षा ११ को Ragistration Form संबन्धि सुचना।</a></p>
+    
+    </div>
+  </section>
+  
+
+
+  <!-- section principals message -->
+  <section class="principal-message">
+    <div class="container">
+      <div class="message-card">
+        <div class="principal-image">
+          <img src="assets/headsir.jpg" alt="Principal's Photo">
+        </div>
+  
+        <!-- Message Content -->
+        <div class="message-content">
+          <h2 class="section-title">Principal's Message</h2>
+          <p class="message-text">
+            Welcome to Shree Rajeshwar Nidhi Secondary School. Our school is dedicated to nurturing young minds, fostering growth, and ensuring the holistic development of every student. Through innovation and tradition, we aim to provide a platform where students can thrive academically, socially, and morally.
+          </p>
+          <blockquote>
+            "Education is the most powerful weapon you can use to change the world." – Nelson Mandela
+          </blockquote>
+          <p class="principal-name">– Premendra Kumar Nidhi, Principal</p>
+        </div>
+      </div>
+    </div>
+</section>
+<section>
+
+</section>
+<!-- 
+News and events -->
+<div class="container my-5">
+  <h2 class="text-center text-danger mb-4">Latest News & Events</h2>
+  <div class="row">
+    <div class="col-lg-3 col-md-6 col-sm-12" *ngFor="let event of events">
+      <div class="card shadow-sm h-100">
+        <img [src]="event.image" class="card-img-top" [alt]="event.title">
+        <div class="card-body">
+          <h5 class="card-title">{{ event.title }}</h5>
+          <p class="card-text">{{ event.description }}</p>
+        </div>
+        <div class="card-footer bg-white">
+          <small class="text-muted">{{ event.date }}</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- counter -->
+<div class="stats-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 stat-box">
+        <div class="stat-icon">
+          <i class="fas fa-user-graduate"></i>
+        </div>
+        <div class="stat-content">
+          <h2 class="count" [attr.data-target]="759">{{ studentsCount }}<b>+</b></h2>
+          <p>Students</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 stat-box">
+        <div class="stat-icon">
+          <i class="fas fa-school"></i>
+        </div>
+        <div class="stat-content">
+          <h2 class="count" [attr.data-target]="60">{{ teachersCount }}<b>+</b></h2>
+          <p>Teachers</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 stat-box">
+        <div class="stat-icon">
+          <i class="fas fa-award"></i>
+        </div>
+        <div class="stat-content">
+          <h2 class="count" [attr.data-target]="6">{{ excellenceCount }}<b>+</b></h2>
+          <p>Years of Excellence</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 stat-box">
+        <div class="stat-icon">
+          <i class="fas fa-book-reader"></i>
+        </div>
+        <div class="stat-content">
+          <h2 class="count" [attr.data-target]="8">{{ programsCount }}<b>+</b></h2>
+          <p>Programs</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-slider></app-slider>
