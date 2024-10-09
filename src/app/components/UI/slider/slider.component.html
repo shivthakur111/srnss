@@ -1,18 +1,22 @@
-<div class="slider-container">
-  <div class="slider-wrapper" [style.transform]="getTransform()">
+<h2 style="text-align: center;font-weight: 800;color: rgb(22, 22, 151);"><i><u>Our Gellary</u></i></h2>
+<div class="container">
+
+  <div class="slide">
     <div
-      class="slider-item"
-      *ngFor="let slide of slides; let i = index"
-      [class.active]="i === currentIndex"
-    >
-      <img [src]="slide.imageUrl" alt="Slide Image" />
-      <div class="caption">
-        <h3>{{ slide.title }}</h3>
-        <p>{{ slide.description }}</p>
-      </div>
+      *ngFor="let item of items; let i = index"
+      class="item"
+      [ngStyle]="{ 'background-image': 'url(' + item.image + ')' }"
+      [class.active]="i === activeIndex"
+      >
     </div>
   </div>
-  <button class="prev" (click)="prevSlide()">&#10094;</button>
-  <button class="next" (click)="nextSlide()">&#10095;</button>
+
+  <div class="button">
+    <button class="prev" (click)="prevSlide()">
+      <i class="fa-solid fa-arrow-left"></i>
+    </button>
+    <button class="next" (click)="nextSlide()">
+      <i class="fa-solid fa-arrow-right"></i>
+    </button>
+  </div>
 </div>
-  

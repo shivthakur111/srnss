@@ -278,3 +278,75 @@
   /* latest notice css */
   .notice-card{display: flex;}
   .notice{width: max-content;padding: 2px 8px 2px 8px;margin: 10px;border-radius: 5px;}
+
+
+  /* Contact us */
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    margin: 50px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.contact-form {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-form h2 {
+    color: #e91e63;
+    margin-bottom: 10px;
+}
+
+.contact-form p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contact-form a {
+    color: #1e10e2;
+    text-decoration: none;
+}
+
+.contact-form a:hover {
+    text-decoration: underline;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #e91e63;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #d81b60;
+}
+
