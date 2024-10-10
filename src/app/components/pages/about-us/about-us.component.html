@@ -1,0 +1,83 @@
+<app-app-header></app-app-header>
+<div class="about-us">
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div style="width: 40%;">
+            <h1 style="margin-top: 30%;">About Us</h1>
+            <p>We nurture curiosity, foster creativity, and empower students to excel. Our school is a dynamic learning environment that champions both academic excellence and personal growth.</p>
+            
+        </div> 
+      <div>
+        <img src="assets/images/edu.gif" alt="school pic">
+      </div>
+    </div>
+  
+    <!-- School Overview Section -->
+    <div class="container">
+      <div class="row mb-5 animate-section">
+        <div class="col-md-6">
+          <h2>Welcome to Our School</h2>
+          <p>
+            At <i><b>Shree Rajeshwar Nidhi Secondary School</b></i>, we are committed to creating a space where young minds can flourish, grow, and prepare for a bright future. Our school is not just an academic institution; it’s a vibrant community where students are encouraged to explore their talents, foster their creativity, and develop into responsible global citizens. We aim to provide an enriching and inspiring environment where every student feels valued and supported, enabling them to excel in their studies and personal development.
+          </p>
+          <p>Whether you are a new student or a returning one, we warmly welcome you to join us in a journey of discovery, growth, and success. Together, we can build a strong foundation for a lifetime of learning and achievement.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="assets/images/schoolbuilding.jpg" class="img-fluid rounded" alt="School Building">
+        </div>
+      </div>
+  
+      <!-- Mission and Vision Section -->
+      <div class="row text-center mb-5 animate-section">
+        <div class="col-md-6">
+          <h3>Our Mission</h3>
+          <p>
+            Our mission at <b>SRNSS</b> is to provide a world-class education that empowers students to become critical thinkers, compassionate individuals, and innovative leaders. We strive to inspire a lifelong love of learning while nurturing the skills necessary to succeed in a rapidly changing world. By focusing on academic excellence, character development, and community engagement, we prepare our students not just for exams, but for life.</p>
+            <p>Through a dynamic and inclusive curriculum, we aim to cultivate curiosity, encourage collaboration, and foster a deep sense of integrity and responsibility. Our mission is to guide each student to achieve their highest potential, both inside and outside the classroom.</p>
+        </div>
+        <div class="col-md-6">
+          <h3>Our Vision</h3>
+          <p>
+            Our vision is to shape the leaders of tomorrow by providing a comprehensive and forward-thinking education. We envision a school where students are equipped with the knowledge, skills, and moral compass to navigate and excel in a global society. At [School Name], we believe in fostering a community of learners who are not only academically accomplished but also socially conscious and environmentally responsible.</p>
+        <p>We aim to create a learning environment that embraces innovation, celebrates diversity, and encourages each student to explore their unique strengths and passions. Our vision is to be a beacon of educational excellence, where every student is prepared to thrive in the future.</p>
+        </div>
+      </div>
+  
+      <!-- History Section -->
+      <div class="row mb-5 animate-section">
+        <div class="col-12 text-center">
+          <h3>Our History</h3>
+          <p>
+            Founded in 2005 B.S., SRNSS has a long-standing tradition of academic achievement and community involvement. What began as a small institution with a handful of students has grown into a thriving educational community known for its dedication to excellence and innovation. Over the years, we have continually evolved to meet the changing needs of our students and society, while remaining true to our core values of integrity, respect, and inclusivity.</p>
+        </div>
+      </div>
+  
+      <!-- Meet the Team Section -->
+      <div class="row text-center mb-5">
+        <div class="col-12 mb-4 animate-section">
+          <h3>Meet Our Team</h3>
+        </div>
+  
+        <!-- Team Member Cards -->
+        <div class="col-md-3 animate-section" *ngFor="let member of teamMembers">
+          <div class="team-card">
+            <img [src]="member.image" class="team-photo" alt="{{ member.name }}">
+            <h5 style="background-color: azure;">{{ member.name }}</h5>
+            <p style="background-color: azure;">{{ member.position }}</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Call to Action Section -->
+      <div class="row text-center animate-section">
+        <div class="col-12">
+          <h3>Join Us Today!</h3>
+          <p>Discover the opportunities awaiting your child at our school. Enroll now!</p>
+          <button class="cta-button">Apply Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <app-app-footer></app-app-footer>

@@ -7,6 +7,7 @@ import { AppHeaderComponent } from './components/layout/app-header/app-header.co
 import { AppFooterComponent } from './components/layout/app-footer/app-footer.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { SliderComponent } from './components/UI/slider/slider.component';
+import { AboutUsComponent } from './components/pages/about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SliderComponent } from './components/UI/slider/slider.component';
     AppHeaderComponent,
     AppFooterComponent,
     HomeComponent,
-    SliderComponent
+    SliderComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
