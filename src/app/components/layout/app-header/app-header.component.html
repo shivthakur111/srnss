@@ -9,16 +9,36 @@
         <img style="height: 80px;padding-right: 8px;" src="assets/flag.png"  alt="Nepal Govt Logo">
       </div>
   </header>
-
+<!-- navigation Bar -->
   <nav class="navbar">
     <a routerLink="">Home</a>
-    <a routerLink="about-us">About Us</a>
-    <a routerLink="/academics">Academics</a>
-    <a routerLink="/contact">Contact</a>
-    <a routerLink="/admission">Admission</a>
-    <a routerLink="/results">Results</a>
-    <a routerLink="/services">Online Services</a>
+    <a routerLink="/about-us">About Us</a>
+    <div class="dropdown">
+      <a class="dropbtn">Academics</a>
+      <div class="dropdown-content">
+          <a routerLink="/faculties">Faculties</a>
+          <a href="/routines">Routines</a>
+          <a routerLink="/syllabus&curriculum">Syllabus & Curriculum</a>
+      </div>
+    </div>
+    <a routerLink="/admission">News & Events</a>
+    <a routerLink="/Notices">Notices</a>
+    <div class="dropdown">
+      <a class="dropbtn">Online Services</a>
+      <div class="dropdown-content">
+        <a routerLink="/admission">Admission</a>
+        <a routerLink="/">Results</a>
+        <a routerLink="/">Apply For CC/LC</a>
+        <a routerLink="/">ID Card</a>  
+      </div>
+    </div>
+
+    <a routerLink="/contact">Contact US</a>
     <a routerLink="/our-team">Our Team</a>
     <a routerLink="/blogs">Our Blogs</a>
-  </nav>
+    </nav>
+  
+    
+    
+
   

@@ -1,0 +1,56 @@
+<app-app-header></app-app-header>
+<div class="routines-container">
+  <h1 class="page-title">Class Routines</h1>
+  <p class="page-description">Find the routines for each level and download them for easy access.</p>
+
+  <!-- Primary Level -->
+  <div class="routine-section">
+    <h2>Primary Level (1-5)</h2>
+    <p>Routine Issue Date: {{ primaryRoutine.issueDate }}</p>
+    <a [href]="primaryRoutine.pdfLink" target="_blank" class="download-link">Download Routine (PDF)</a>
+    <pdf-viewer
+      [src]="primaryRoutine.pdfLink"
+      [render-text]="true"
+      style="display: block;"
+    ></pdf-viewer>
+  </div>
+
+  <!-- Lower Secondary Level -->
+  <div class="routine-section">
+    <h2>Lower Secondary Level (6-8)</h2>
+    <p>Routine Issue Date: {{ lowerSecondaryRoutine.issueDate }}</p>
+    <a [href]="lowerSecondaryRoutine.pdfLink" target="_blank" class="download-link">Download Routine (PDF)</a>
+    <pdf-viewer
+      [src]="lowerSecondaryRoutine.pdfLink"
+      [render-text]="true"
+      style="display: block;"
+    ></pdf-viewer>
+  </div>
+
+  <!-- Secondary Level 9-10-->
+  <div class="routine-section">
+    <h2>Secondary Level (9-10) </h2>
+    <p>Routine Issue Date: {{ secondary1Routine.issueDate }}</p>
+    <a [href]="secondary1Routine.pdfLink" target="_blank" class="download-link">Download Routine (PDF)</a>
+    <pdf-viewer
+      [src]="secondary1Routine.pdfLink"
+      [render-text]="true"
+      style="display: block;"
+    ></pdf-viewer>
+  </div>
+
+
+  <!-- Secondary Level 11-12-->
+  <div class="routine-section">
+    <h2>Secondary Level (11-12)</h2>
+    <p>Routine Issue Date: {{ secondary2Routine.issueDate }}</p>
+    <a [href]="secondary2Routine.pdfLink" target="_blank" class="download-link">Download Routine (PDF)</a>
+    <pdf-viewer
+      [src]="secondary2Routine.pdfLink"
+      [render-text]="true"
+      style="display: block;"
+    ></pdf-viewer>
+  </div>
+</div>
+
+<app-app-footer></app-app-footer>

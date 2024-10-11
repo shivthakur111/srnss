@@ -1,0 +1,40 @@
+<div class="container">
+    <h2 class="text-center"><i><u><b>Meet Our Team Members</b></u></i></h2>
+    
+    <!-- Staff Cards -->
+    <div class="row justify-content-center">
+      <div class="col-md-4 col-sm-6" *ngFor="let staff of staffMembers">
+        <div class="card team-card" (click)="openModal(staff)">
+          <img class="card-img-top" [src]="staff.image" alt="{{ staff.name }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ staff.name }}</h5>
+            <p class="card-text">{{ staff.position }}</p>
+            <button class="btn btn-primary">View Profile</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Modal Popup -->
+    <div class="modal" tabindex="-1" [ngClass]="{'show-modal': isModalOpen}">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">{{ selectedStaff?.name }}</h5>
+            <button type="button" class="close" aria-label="Close" (click)="closeModal()">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img [src]="selectedStaff?.image" alt="{{ selectedStaff?.name }}" class="img-fluid mb-3">
+            <p><strong>Position:</strong> {{ selectedStaff?.position }}</p>
+            <p>{{ selectedStaff?.description }}</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" (click)="closeModal()">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,19 @@
+<app-app-header></app-app-header>
+<div class="faculties-container">
+    <h1 class="page-title">Explore Our Faculties</h1>
+    <p class="page-description">Discover the programs and opportunities in our faculties.</p>
+  
+    <div class="faculty-card" *ngFor="let faculty of faculties">
+      <img [src]="faculty.image" [alt]="faculty.name" class="faculty-image" />
+      <div class="faculty-details">
+        <h2>{{ faculty.name }}</h2>
+        <p>{{ faculty.description }}</p>
+        <button class="details-btn" (click)="toggleDetails(faculty)">More Details</button>
+  
+        <div class="extra-details" *ngIf="faculty.showDetails">
+          <p>{{ faculty.extraInfo }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-app-footer></app-app-footer>

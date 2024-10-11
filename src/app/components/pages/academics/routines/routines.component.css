@@ -1,0 +1,61 @@
+.routines-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.page-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.page-description {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.routine-section {
+  margin: 30px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease;
+}
+
+.routine-section:hover {
+  transform: scale(1.02);
+}
+
+.routine-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.routine-section p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.download-link {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.download-link:hover {
+  background-color: #45a049;
+}
+
+pdf-viewer {
+  width: 90%;
+  height: 600px;
+  border: 1px solid #d3bfbf;
+  margin: 5%;
+ 
+}

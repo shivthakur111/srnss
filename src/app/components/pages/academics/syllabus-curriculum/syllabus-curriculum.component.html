@@ -1,0 +1,31 @@
+<app-app-header></app-app-header>
+
+<div class="container">
+  <h2>Curriculum and Ebooks</h2>
+
+  <!-- Class Filter Dropdown -->
+  <label for="classFilter">Select Class:</label>
+  <select id="classFilter" [(ngModel)]="selectedClass" (change)="filterByClass()">
+    <option *ngFor="let classOption of classOptions" [value]="classOption">
+      {{ classOption }}
+    </option>
+  </select>
+
+  <!-- Display Curriculum and Ebooks -->
+  <div *ngIf="filteredCurriculum.length > 0">
+    <h3>Downloadable Resources for {{ selectedClass }}:</h3>
+    <ul>
+      <li *ngFor="let item of filteredCurriculum">
+        {{ item.title }} 
+        <a [href]="item.link" target="_blank" download>Download</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- No Data Available Message -->
+  <div *ngIf="filteredCurriculum.length === 0">
+    <p>No curriculum or ebooks available for {{ selectedClass }}.</p>
+  </div>
+</div>
+
+<app-app-footer></app-app-footer>
