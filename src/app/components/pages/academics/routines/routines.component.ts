@@ -26,4 +26,26 @@ export class RoutinesComponent {
     issueDate: 'October 15, 2024',
     pdfLink: 'assets/routines/secondary2.pdf'
   };
+
+
+  zoom = 1.0; // Initial zoom level
+
+  zoomIn() {
+    this.zoom += 0.25; // Increase zoom by 0.25
+  }
+
+  zoomOut() {
+    if (this.zoom > 0.25) {
+      this.zoom -= 0.25; // Decrease zoom by 0.25
+    }
+  }
+
+  resetZoom() {
+    this.zoom = 1.0; // Reset zoom to default (1.0)
+  }
+
+  // Update the zoom based on input field changes
+  updateZoom(value: number) {
+    this.zoom = value;
+  }
 }

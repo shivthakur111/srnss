@@ -13,28 +13,22 @@
     max-width: 47%;
     line-height: 30px;
     font-family: sans-serif;
-    
   }
   
   .sec-discription .content h2 {
     font-size: 25px;
     color: #333;
-    
     margin-bottom: 10px;
-    padding-right: 30px;
+    padding-right: 15px;
     text-align: justify;
   }
   
-  
-  
-  .sec-discription .image-container {
-    max-width: 50%; /* Adjust size relative to content */
-  }
-  
+    
   .sec-discription .image-container img {
     max-width: 100%;
     border-radius: 15px; /* Rounded corners like in the image */
     height: 400px;
+    margin-left: 3%;
   }
 
 
@@ -80,13 +74,21 @@
       max-width: 100%;
     }
   
-    .sec-discription .content h1 {
-      font-size: 28px;
+    .sec-discription .content h2 {
+      font-size: 18px;
     }
     .sec-discription .image-container img {
         max-width: 100%;
         border-radius: 15px; /* Rounded corners like in the image */
-        height: auto;
+        height: 250px;
+        margin-left: 0%;
+      }
+
+
+      .lportal-btn {
+        padding: 10px 15px;
+        font-size: 14px;
+        margin-bottom: 20px;
       }
 
   }
@@ -219,6 +221,12 @@
     text-align: right;
     font-size: 0.85rem;
   }
+
+  @media (max-width: 768px) {
+    .card-out{
+      margin-bottom: 20px;
+    }
+  }
   
 
   /* increment */
@@ -288,14 +296,13 @@
     padding: 20px;
     background-color: white;
     margin: 50px auto;
-    width: 80%;
+    width: 85%;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .contact-image {
     flex: 1;
-    padding: 20px;
 }
 
 .contact-image img {
@@ -305,7 +312,7 @@
 }
 
 .contact-form {
-    flex: 1;
+  flex: 1;
     padding: 20px;
 }
 
@@ -347,6 +354,15 @@
 }
 
 .contact-form button:hover {
-    background-color: #d81b60;
+    background-color: #b43564;
 }
 
+@media (max-width: 768px) {
+  .contact-image img {
+   display: none;
+}
+.contact-form {
+  flex: 1000;
+    padding: 20px;
+}
+}

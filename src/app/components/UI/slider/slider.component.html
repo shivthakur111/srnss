@@ -1,13 +1,15 @@
-<h2 style="text-align: center;font-weight: 800;color: rgb(22, 22, 151);"><i><u>Our Gellary</u></i></h2>
-<div class="container">
-
+<h2 style="text-align: center;"><u><b>Gellary</b></u></h2>
+<div class="container" 
+     (mouseenter)="onMouseEnter()" 
+     (mouseleave)="onMouseLeave()"
+     (touchstart)="onTouchStart()" 
+     (touchend)="onTouchEnd()">
   <div class="slide">
     <div
       *ngFor="let item of items; let i = index"
       class="item"
       [ngStyle]="{ 'background-image': 'url(' + item.image + ')' }"
-      [class.active]="i === activeIndex"
-      >
+      [class.active]="i === activeIndex">
     </div>
   </div>
 

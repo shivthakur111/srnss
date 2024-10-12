@@ -5,8 +5,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
   templateUrl: './slider.component.html',
   styleUrls: ['./slider.component.css']
 })
-
-export class SliderComponent implements OnInit {
+export class SliderComponent implements OnInit, OnDestroy {
   items = [
     {
       image: 'https://i.ibb.co/qCkd9jS/img1.jpg',
@@ -23,9 +22,14 @@ export class SliderComponent implements OnInit {
   ];
 
   activeIndex = 0;
+  intervalId: any;
 
   ngOnInit(): void {
     this.autoSlide();
+  }
+
+  ngOnDestroy(): void {
+    this.clearAutoSlide();
   }
 
   nextSlide(): void {
@@ -37,8 +41,33 @@ export class SliderComponent implements OnInit {
   }
 
   autoSlide(): void {
-    setInterval(() => {
+    this.clearAutoSlide(); // Clear any existing interval
+    this.intervalId = setInterval(() => {
       this.nextSlide();
     }, 2000);
+  }
+
+  clearAutoSlide(): void {
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
+      this.intervalId = null; // Set to null to prevent multiple calls
+    }
+  }
+
+  onMouseEnter(): void {
+    this.clearAutoSlide(); // Pause the slider on hover
+  }
+
+  onMouseLeave(): void {
+    this.autoSlide(); // Restart the slider when mouse leaves
+  }
+
+  // Touch event handlers for mobile
+  onTouchStart(): void {
+    this.clearAutoSlide(); // Pause the slider on touch
+  }
+
+  onTouchEnd(): void {
+    this.autoSlide(); // Restart the slider when touch ends
   }
 }

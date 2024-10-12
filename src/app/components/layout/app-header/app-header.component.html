@@ -2,43 +2,71 @@
     <div class="logo">
       <img style="padding-left: 10px;" src="assets/schoollogo.png" alt="School Logo">
     </div>
-      <div style="text-align: center; color: blue; font-size: 30px;font-weight: 1000; "><P style="font-family: cursive; line-height: 28px;">SHREE RAJESHWAR NIDHI SECONDARY SCHOOL</P>
-          <p style="font-family: cursive; font-size: 22px;">Nagarain-2 (Dhanusha) Nepal<br>ESTD:2005 BS</p>
-      </div>
+    <div class="headline1"><P style="font-family: cursive; line-height: 28px;">SHREE RAJESHWAR NIDHI SECONDARY SCHOOL</P>
+      <p class="headline2">Nagarain-2 (Dhanusha) Nepal</p>
+      <p class="headline3">ESTD:2005 BS</p>
+    </div>
     <div class="logo">
-        <img style="height: 80px;padding-right: 8px;" src="assets/flag.png"  alt="Nepal Govt Logo">
-      </div>
+        <img class="flag" style="height: 80;padding-right: 8px; height: 80;height: 80;" src="assets/flag.png"  alt="Nepal Govt Logo">
+    </div>
   </header>
+
 <!-- navigation Bar -->
-  <nav class="navbar">
-    <a routerLink="">Home</a>
-    <a routerLink="/about-us">About Us</a>
-    <div class="dropdown">
-      <a class="dropbtn">Academics</a>
-      <div class="dropdown-content">
-          <a routerLink="/faculties">Faculties</a>
-          <a href="/routines">Routines</a>
-          <a routerLink="/syllabus&curriculum">Syllabus & Curriculum</a>
-      </div>
-    </div>
-    <a routerLink="/admission">News & Events</a>
-    <a routerLink="/Notices">Notices</a>
-    <div class="dropdown">
-      <a class="dropbtn">Online Services</a>
-      <div class="dropdown-content">
-        <a routerLink="/admission">Admission</a>
-        <a routerLink="/">Results</a>
-        <a routerLink="/">Apply For CC/LC</a>
-        <a routerLink="/">ID Card</a>  
-      </div>
-    </div>
 
-    <a routerLink="/contact">Contact US</a>
-    <a routerLink="/our-team">Our Team</a>
-    <a routerLink="/blogs">Our Blogs</a>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-blue">
+      <div class="container-fluid " style="display: flex;display: inline;">
+        <a class="navbar-brand" style="font-size: large;"><b><i>Main Menu</i></b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav" >
+          <ul class="navbar-nav w-100 justify-content-between" >
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/about-us">About Us</a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a class="dropbtn nav-link">Academics</a>
+                <div class="dropdown-content">
+                    <a routerLink="/faculties">Faculties</a>
+                    <a href="/routines">Routines</a>
+                    <a routerLink="/syllabus&curriculum">Syllabus & Curriculum</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/admission">News & Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/Notices">Notices</a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a class="dropbtn nav-link">Online Services</a>
+                <div class="dropdown-content">
+                  <a routerLink="/admission">Admission</a>
+                  <a routerLink="/">Results</a>
+                  <a routerLink="/">Apply For CC/LC</a>
+                  <a routerLink="/">ID Card</a>  
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/contact">Contact US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/our-team">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/blogs">Our Blogs</a>
+            </li>
+      
+          </ul>
+        </div>
+      </div>
     </nav>
-  
-    
-    
-
-  

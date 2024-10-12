@@ -8,9 +8,19 @@
     <h2>Primary Level (1-5)</h2>
     <p>Routine Issue Date: {{ primaryRoutine.issueDate }}</p>
     <a [href]="primaryRoutine.pdfLink" target="_blank" class="download-link">Download Routine (PDF)</a>
+    <label for="zoom" style="margin-left: 10%;"><b>ZOOM IN/OUT</b></label>
+    <input 
+    type="number" 
+    [(ngModel)]="zoom" 
+    (ngModelChange)="updateZoom($event)" 
+    min="0.25" 
+    step="0.25" 
+    style="width: 60px; margin-top: 10px;"
+  />
     <pdf-viewer
       [src]="primaryRoutine.pdfLink"
       [render-text]="true"
+      [zoom]="zoom"
       style="display: block;"
     ></pdf-viewer>
   </div>
@@ -20,10 +30,21 @@
     <h2>Lower Secondary Level (6-8)</h2>
     <p>Routine Issue Date: {{ lowerSecondaryRoutine.issueDate }}</p>
     <a [href]="lowerSecondaryRoutine.pdfLink" target="_blank" class="download-link">Download Routine (PDF)</a>
+    <label for="zoom" style="margin-left: 10%;"><b>ZOOM IN/OUT</b></label>
+    <input 
+    type="number" 
+    [(ngModel)]="zoom" 
+    (ngModelChange)="updateZoom($event)" 
+    min="0.25" 
+    step="0.25" 
+    style="width: 60px; margin-top: 10px;"
+  />
+
     <pdf-viewer
       [src]="lowerSecondaryRoutine.pdfLink"
       [render-text]="true"
       style="display: block;"
+      [zoom]="zoom"
     ></pdf-viewer>
   </div>
 
@@ -32,10 +53,21 @@
     <h2>Secondary Level (9-10) </h2>
     <p>Routine Issue Date: {{ secondary1Routine.issueDate }}</p>
     <a [href]="secondary1Routine.pdfLink" target="_blank" class="download-link">Download Routine (PDF)</a>
+    <label for="zoom" style="margin-left: 10%;"><b>ZOOM IN/OUT</b></label>
+    <input 
+    type="number" 
+    [(ngModel)]="zoom" 
+    (ngModelChange)="updateZoom($event)" 
+    min="0.25" 
+    step="0.25" 
+    style="width: 60px; margin-top: 10px;"
+  />
+
     <pdf-viewer
       [src]="secondary1Routine.pdfLink"
       [render-text]="true"
       style="display: block;"
+      [zoom]="zoom"
     ></pdf-viewer>
   </div>
 
@@ -45,10 +77,21 @@
     <h2>Secondary Level (11-12)</h2>
     <p>Routine Issue Date: {{ secondary2Routine.issueDate }}</p>
     <a [href]="secondary2Routine.pdfLink" target="_blank" class="download-link">Download Routine (PDF)</a>
+
+    <label for="zoom" style="margin-left: 10%;"><b>ZOOM IN/OUT</b></label>
+    <input 
+    type="number" 
+    [(ngModel)]="zoom" 
+    (ngModelChange)="updateZoom($event)" 
+    min="0.25" 
+    step="0.25" 
+    style="width: 60px; margin-top: 10px;"
+  />
     <pdf-viewer
       [src]="secondary2Routine.pdfLink"
       [render-text]="true"
       style="display: block;"
+      [zoom]="zoom"
     ></pdf-viewer>
   </div>
 </div>

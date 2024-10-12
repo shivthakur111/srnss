@@ -1,7 +1,7 @@
 .container {
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 600px; /* This can be adjusted for mobile */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +22,7 @@
 }
 
 .item {
-  width:400px;
+  width: 400px; /* Default width for larger screens */
   height: 450px;
   border-radius: 20px;
   background-position: center;
@@ -61,4 +61,31 @@
 
 .button button:hover {
   background-color: #e0e0e0;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .container {
+    height: 300px; /* Adjust height for mobile */
+  }
+
+  .item {
+    width: 90%; /* Adjust width for mobile */
+    height: 200px; /* Adjust height for mobile */
+    margin: 0 auto; /* Center item */
+  }
+
+  .button {
+    bottom: 10px; /* Adjust button position for mobile */
+  }
+
+  .button button {
+    padding: 8px; /* Smaller buttons for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .item {
+    height: 150px; /* Further reduce height for smaller screens */
+  }
 }

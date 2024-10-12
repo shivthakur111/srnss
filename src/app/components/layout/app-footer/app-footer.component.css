@@ -97,5 +97,12 @@
       flex-basis: 100%;
       text-align: center;
     }
+    .social-icons{
+      display: inline;
+      align-items: center;
+    }
+    .social-icons a{
+      margin: 5px;
+    }
   }
   

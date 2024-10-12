@@ -1,15 +1,16 @@
+<app-app-header></app-app-header>
 <div class="container">
     <h2 class="text-center"><i><u><b>Meet Our Team Members</b></u></i></h2>
     
     <!-- Staff Cards -->
     <div class="row justify-content-center">
       <div class="col-md-4 col-sm-6" *ngFor="let staff of staffMembers">
-        <div class="card team-card" (click)="openModal(staff)">
+        <div class="card team-card ">
           <img class="card-img-top" [src]="staff.image" alt="{{ staff.name }}">
           <div class="card-body">
             <h5 class="card-title">{{ staff.name }}</h5>
             <p class="card-text">{{ staff.position }}</p>
-            <button class="btn btn-primary">View Profile</button>
+            <button class="btn btn-primary" (click)="openModal(staff)">View Profile</button>
           </div>
         </div>
       </div>
@@ -37,4 +38,6 @@
       </div>
     </div>
   </div>
+
+  <app-app-footer></app-app-footer>
   

@@ -10,8 +10,10 @@
   color: rgb(8, 4, 65);
   text-align: center;
   display: flex;
-  padding-left: 8%;
- padding-top: 10px;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  padding: 10px 8%;
 }
 
 .hero-section h1 {
@@ -22,8 +24,41 @@
   font-size: 1.25rem;
   margin-top: 10px;
 }
-.hero-section img{padding-left: 30px;
-padding-top: 20px;}
+
+.hero-section img {
+  padding-left: 10px;
+  padding-top: 10px;
+  max-width: 100%; /* Ensures image resizes properly */
+  height: auto;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column; /* Stack elements vertically */
+    padding-left: 0;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .hero-section img {
+    padding-left: 0;
+    padding-top: 15px;
+    width: 80%; /* Adjust the size for smaller screens */
+  }
+}
+
+
+
+
+
 .container {
   padding: 50px 15px;
 }
