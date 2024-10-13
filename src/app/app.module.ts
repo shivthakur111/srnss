@@ -13,6 +13,14 @@ import { SyllabusCurriculumComponent } from './components/pages/academics/syllab
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { FormsModule } from '@angular/forms';
 import { OurTeamComponent } from './components/pages/our-team/our-team.component';
+import { ContactUsComponent } from './components/pages/contact-us/contact-us.component';
+import { NoticesComponent } from './components/pages/notices/notices.component';
+import { OurBlogsComponent } from './components/pages/our-blogs/our-blogs.component';
+import { NewsEventsComponent } from './components/pages/news-events/news-events.component';
+import { AdmissionComponent } from './components/pages/online-services/admission/admission.component';
+import { ResultsComponent } from './components/pages/online-services/results/results.component';
+import { CcLcComponent } from './components/pages/online-services/cc-lc/cc-lc.component';
+
 
 @NgModule({
   declarations: [
@@ -26,6 +34,14 @@ import { OurTeamComponent } from './components/pages/our-team/our-team.component
     RoutinesComponent,
     SyllabusCurriculumComponent,
     OurTeamComponent,
+    ContactUsComponent,
+    NoticesComponent,
+    OurBlogsComponent,
+    NewsEventsComponent,
+    AdmissionComponent,
+    ResultsComponent,
+    CcLcComponent,
+
   ],
   imports: [
     BrowserModule,

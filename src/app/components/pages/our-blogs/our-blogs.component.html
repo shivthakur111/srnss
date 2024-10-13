@@ -1,0 +1,28 @@
+<div class="blogs-container">
+    <h2>Our Blogs</h2>
+    <div class="blogs-list">
+      <div
+        class="blog-item"
+        *ngFor="let blog of blogs"
+        (click)="openBlogDetails(blog)"
+      >
+        <img [src]="blog.imageUrl" alt="{{ blog.title }}" />
+        <div class="blog-info">
+          <h3>{{ blog.title }}</h3>
+          <p>{{ blog.content }}</p>
+          <span class="post-date">{{ blog.postDate | date:'shortDate' }}</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="modal" *ngIf="selectedBlog">
+      <div class="modal-content">
+        <span class="close" (click)="closeModal()">&times;</span>
+        <h2>{{ selectedBlog.title }}</h2>
+        <img [src]="selectedBlog.imageUrl" alt="{{ selectedBlog.title }}" class="modal-image" />
+        <p>{{ selectedBlog.content }}</p>
+        <span class="post-date">{{ selectedBlog.postDate | date:'fullDate' }}</span>
+      </div>
+    </div>
+  </div>
+  

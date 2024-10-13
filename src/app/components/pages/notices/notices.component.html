@@ -1,0 +1,21 @@
+<app-app-header></app-app-header>
+<div class="notices-container">
+    <h2>School Notices</h2>
+    <div class="notice-list">
+      <div *ngFor="let notice of notices" class="notice-card" (click)="openNoticeDetails(notice)">
+        <h3>{{ notice.title }}</h3>
+        <p>{{ notice.postDate | date:'mediumDate' }}</p>
+      </div>
+    </div>
+  
+    <div class="modal" *ngIf="selectedNotice">
+      <div class="modal-content">
+        <span class="close" (click)="closeModal()">&times;</span>
+        <h2>{{ selectedNotice.title }}</h2>
+        <img [src]="selectedNotice.imageUrl" alt="{{ selectedNotice.title }}" />
+        <p>{{ selectedNotice.details }}</p>
+      </div>
+    </div>
+  </div>
+  <app-app-footer></app-app-footer>
+  
