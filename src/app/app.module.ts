@@ -16,7 +16,7 @@ import { OurTeamComponent } from './components/pages/our-team/our-team.component
 import { ContactUsComponent } from './components/pages/contact-us/contact-us.component';
 import { NoticesComponent } from './components/pages/notices/notices.component';
 import { OurBlogsComponent } from './components/pages/our-blogs/our-blogs.component';
-import { NewsEventsComponent } from './components/pages/news-events/news-events.component';
+import { NewsEventComponent } from './components/pages/news-events/news-events.component';
 import { AdmissionComponent } from './components/pages/online-services/admission/admission.component';
 import { ResultsComponent } from './components/pages/online-services/results/results.component';
 import { CcLcComponent } from './components/pages/online-services/cc-lc/cc-lc.component';
@@ -37,7 +37,7 @@ import { CcLcComponent } from './components/pages/online-services/cc-lc/cc-lc.co
     ContactUsComponent,
     NoticesComponent,
     OurBlogsComponent,
-    NewsEventsComponent,
+    NewsEventComponent,
     AdmissionComponent,
     ResultsComponent,
     CcLcComponent,

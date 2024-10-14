@@ -1,1 +1,58 @@
-<p>news-events works!</p>
+<app-app-header></app-app-header>
+<div class="news-events-page">
+    <!-- Main News Section -->
+    <div class="main-news">
+      <div class="main-article" *ngFor="let mainNews of mainNewsItems" [@fadeInUp]>
+        <img [src]="mainNews.imageUrl" alt="Main News Image" class="main-news-image" />
+        <div class="article-content">
+          <div class="article-info">
+            <h2>{{ mainNews.title }}</h2>
+            <p>{{ mainNews.description }}</p>
+            <span>{{ mainNews.date }} | {{ mainNews.readTime }} min read</span>
+          </div>
+        </div>
+      </div> 
+  
+      <!-- Secondary News Section -->
+      <div class="secondary-articles">
+        <div class="secondary-article" *ngFor="let news of secondaryNews" [@fadeInUp]>
+            <img src="https://scontent.fktm18-1.fna.fbcdn.net/v/t39.30808-6/427986802_891237229669674_8272337927106406417_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=7ltkzUvifKIQ7kNvgHOZyWt&_nc_ht=scontent.fktm18-1.fna&_nc_gid=AKyUggqkLgy0ux78FXi0Dy0&oh=00_AYCod3wb-ctnMvU3YepXGPoLo_tQ3h0clbRLKb49d6oLoQ&oe=67130611" alt="">
+          
+          <img [src]="news.imageUrl" alt="News Image" />
+          <img [src]="news.imageUrl" alt="hskj">
+          <div class="secondary-content">
+            <h3>{{ news.title }}</h3>
+            <span>{{ news.date }} | {{ news.readTime }} min read</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Sidebar Section -->
+    <div class="sidebar">
+      <div class="latest-articles">
+        <h3>Latest Articles</h3>
+        <div class="latest-item" *ngFor="let article of latestArticles">
+          <img [src]="article.imageUrl" alt="Article Image" />
+          <div class="latest-content">
+            <h4>{{ article.title }}</h4>
+            <span>{{ article.author }} | {{ article.date }}</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="video-news">
+        <h3>News in Video</h3>
+        <div class="video-item" *ngFor="let video of videoNewsItems">
+          <img [src]="video.thumbnail" alt="Video Thumbnail" />
+          <div class="video-content">
+            <h4>{{ video.title }}</h4>
+            <span>{{ video.duration }} min to watch</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <app-app-footer></app-app-footer>
+  
